@@ -36,6 +36,19 @@ class Lapras implements Swimmer, Attacker {
     }
 }
 
+// ********* IMPLEMENTACION HEALER Y FLYER
+
+class Snorlax implements Healer {
+    public void heal(){
+        System.out.println("Snorlax usa rest!);
+    }
+}
+class Pidgeot implements Flyer {
+    public void fly(){
+        System.out.println("Pidgeot usa Volar!);
+    }
+}
+
 class Principal {
 	public static void main(String [] args) {
 		Lapras lapra = new Lapras();
