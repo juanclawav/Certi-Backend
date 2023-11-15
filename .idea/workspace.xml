@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c071cd82-85d5-41f5-b65b-58f039d540d8" name="Changes" comment="Commit Tarea Hexagonal Enrique Vicente y Juan Claudio Carrasco">
+      <change afterPath="$PROJECT_DIR$/sql-app/src/app/dtos/user.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql-app/src/app/services/user.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql-app/src/domain/entities/IUserEntity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql-app/src/domain/interfaces/user.repository.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql-app/src/domain/models/User.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql-app/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql-app/src/infrastructure/config/dataSource.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql-app/src/infrastructure/entities/user.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql-app/src/infrastructure/repositories/user.repository.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="architectures" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="recentNewPullRequestHead">
+      <RepoCoordinatesHolder>
+        <option name="owner" value="juanclawav" />
+        <option name="repository" value="Certi-Backend" />
+      </RepoCoordinatesHolder>
+    </option>
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="5692ecda-e506-44a2-85fc-145b6560266c" />
+        <option name="url" value="https://github.com/PaulLandaeta/Curso-Backend.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2XpqFqqoAb2Y2limxkicCyW9N0k" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Juan Cla/Desktop/Certi Backend/sql-app",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Juan Cla\Desktop\Certi Backend\architecture\hexagonal" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c071cd82-85d5-41f5-b65b-58f039d540d8" name="Changes" comment="" />
+      <created>1699336275701</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699336275701</updated>
+      <workItem from="1699336276945" duration="6090000" />
+      <workItem from="1699462605901" duration="857000" />
+      <workItem from="1699463531913" duration="2832000" />
+      <workItem from="1699547467201" duration="4090000" />
+    </task>
+    <task id="LOCAL-00001" summary="Commit tarea 1 clase java">
+      <created>1699337127506</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699337127506</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Commit guardar cambios">
+      <created>1699463060358</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699463060358</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Commit Tarea Hexagonal Enrique Vicente y Juan Claudio Carrasco">
+      <created>1699463992665</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699463992665</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit tarea 1 clase java" />
+    <MESSAGE value="Commit guardar cambios" />
+    <MESSAGE value="Commit Tarea Hexagonal Enrique Vicente y Juan Claudio Carrasco" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit Tarea Hexagonal Enrique Vicente y Juan Claudio Carrasco" />
+  </component>
+</project>

@@ -1,0 +1,63 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision ea35a49fe457b43639b38e5124c73c0844e01eb8)
++++ b/.idea/misc.xml	(date 1699374553336)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager">
++  <component name="ProjectRootManager" version="2" project-jdk-name="20" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: principles-and-acronyms/solid/liskov_substitution_principle/java/example01.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/principles-and-acronyms/solid/liskov_substitution_principle/java/example01.java b/principles-and-acronyms/solid/liskov_substitution_principle/java/example01.java
+new file mode 100644
+--- /dev/null	(date 1699376182201)
++++ b/principles-and-acronyms/solid/liskov_substitution_principle/java/example01.java	(date 1699376182201)
+@@ -0,0 +1,32 @@
++class Pokeball {
++    private double escapeProbability;
++    private String name;
++
++    public Pokeball(String name, double escapeProbability) {
++        this.name = name;
++        this.escapeProbability = escapeProbability;
++    }
++
++    public boolean catchPokemon(Pokemon pokemon) {
++        if (pokemon.getEscapeProbability() < escapeProbability) {
++            System.out.println(pokemon.getName() + " fue atrapado con una " + name + "!");
++            return true;
++        } else {
++            System.out.println(pokemon.getName() + " escapó de la " + name + ".");
++            return false;
++        }
++    }
++}
++
++class GreatBall extends Pokeball {
++    public GreatBall() {
++        super("GreatBall", 0.5);
++    }
++}
++
++class UltraBall extends Pokeball {
++    public UltraBall() {
++        super("UltraBall", 0.2);
++    }
++}}
++
+diff --git a/principles-and-acronyms/solid/dependency_inversion_principle/java/example01.java b/principles-and-acronyms/solid/dependency_inversion_principle/java/example01.java
+new file mode 100644
