@@ -6,6 +6,10 @@ export const env = {
     environment: process.env.ENV || 'develop'
 };
 
+export const redis_env = {
+    url: process.env.RD_URL || 'localhost'
+}
+
 export const db = {
     port: process.env.DB_PORT || 3306,
     type: process.env.DB_TYPE || 'mysql',
