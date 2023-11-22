@@ -5,6 +5,8 @@ import logger from "./infrastructure/logger/logger";
 import dotenv from 'dotenv';
 import { env } from './infrastructure/config/config';
 import { apiRoutes } from './api/controllers/apiRoutes';
+import swaggerUi from 'swagger-ui-express';
+import swaggerSpec from './api/swagger/swaggerConfig';
 AppDataSource.initialize().then(() => {
     const app = express();
     dotenv.config();
@@ -21,6 +23,8 @@ AppDataSource.initialize().then(() => {
     });
 
     app.use('/api', apiRoutes());
+    app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
     app.listen(PORT, () => {
         console.log(`Servidor ejecutándose en http://localhost:${PORT}`);
     });

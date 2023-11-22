@@ -15,7 +15,25 @@ export class UserController {
         this.router = Router();
         this.routes();
     }
-
+    /**
+     * @swagger
+     * /users/{id}:
+     *   get:
+     *     summary: Get a user by ID
+     *     tags: [Users]
+     *     parameters:
+     *       - in: path
+     *         name: id
+     *         required: true
+     *         description: ID of the user
+     *         schema:
+     *           type: string
+     *     responses:
+     *       200:
+     *         description: Successful response with user data
+     *       404:
+     *         description: User not found
+     */
     public async getUserById(req: Request, res: Response): Promise<void> {
         const { id } = req.params;
         const userDto = await this.userService.getUserById(id);
@@ -27,7 +45,24 @@ export class UserController {
 
         res.json(userDto);
     }
-
+    /**
+     * @swagger
+     * /users:
+     *   post:
+     *     summary: Create a new user
+     *     tags: [Users]
+     *     requestBody:
+     *       required: true
+     *       content:
+     *         application/json:
+     *           schema:
+     *             $ref: '#/components/schemas/CreateUserDTO'
+     *     responses:
+     *       201:
+     *         description: User created successfully
+     *       400:
+     *         description: Bad request, invalid input
+     */
     public async createUser(req: Request, res: Response): Promise<Response> {
         try {
             const userDto: CreateUserDTO = req.body;
@@ -42,7 +77,25 @@ export class UserController {
 
         }
     }
-
+    /**
+     * @swagger
+     * /users/{userId}:
+     *   delete:
+     *     summary: Delete a user by ID
+     *     tags: [Users]
+     *     parameters:
+     *       - in: path
+     *         name: userId
+     *         required: true
+     *         description: ID of the user to delete
+     *         schema:
+     *           type: string
+     *     responses:
+     *       200:
+     *         description: User deleted successfully
+     *       500:
+     *         description: Internal server error
+     */
     public async deleteUser(req: Request, res: Response): Promise<Response> {
         const { userId } = req.params;
         try {
@@ -55,7 +108,31 @@ export class UserController {
             return res.status(500).json({ message: error });
         }
     }
-
+    /**
+     * @swagger
+     * /users/{userId}:
+     *   put:
+     *     summary: Update a user by ID
+     *     tags: [Users]
+     *     parameters:
+     *       - in: path
+     *         name: userId
+     *         required: true
+     *         description: ID of the user to update
+     *         schema:
+     *           type: string
+     *     requestBody:
+     *       required: true
+     *       content:
+     *         application/json:
+     *           schema:
+     *             type: object
+     *     responses:
+     *       200:
+     *         description: User updated successfully
+     *       500:
+     *         description: Internal server error
+     */
     public async updateUser(req: Request, res: Response): Promise<Response> {
         const { userId } = req.params;
         const updateData = req.body;

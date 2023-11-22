@@ -5,6 +5,10 @@ export const env = {
     port: process.env.ENV_PORT || 3000,
     environment: process.env.ENV || 'develop'
 };
+export const sw = {
+    version: process.env.SW_VERSION || '1.0.0',
+    title: process.env.SW_TITLE || 'AAAAAAAA'
+}
 
 export const redis_env = {
     url: process.env.RD_URL || 'localhost'
